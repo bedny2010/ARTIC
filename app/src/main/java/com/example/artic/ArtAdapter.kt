@@ -20,7 +20,9 @@ class ArtAdapter(var workarts: List<Arts>, var context: Context) : RecyclerView.
         val author: TextView = view.findViewById(R.id.art_list_author)
         val desc: TextView = view.findViewById(R.id.art_list_description)
         val btn: Button = view.findViewById(R.id.art_list_button)
+
     }
+
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.art_in_list,parent,false)

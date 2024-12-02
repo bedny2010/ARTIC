@@ -32,7 +32,7 @@
         tools:ignore="HardcodedText" />
     <Button
 
-        android:id="@+id/art_list_button"
+        android:id="@+id/art_favor_button"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text="В избранное"
