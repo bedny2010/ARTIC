@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#5e4602"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="170dp"
+            android:layout_marginBottom="32dp"
+            android:fontFamily="@font/inter_bold"
+            android:text="Войти в аккаунт"
+            android:textColor="#fdfdfd"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/ed_username_sign"
+            android:layout_width="350dp"
+            android:layout_height="88dp"
+            android:hint="Имя пользователя"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            tools:ignore="HardcodedText" />
+
+
+        <EditText
+            android:id="@+id/ed_password_sign"
+            android:layout_width="350dp"
+            android:layout_height="103dp"
+            android:layout_marginTop="16dp"
+            android:hint="Пароль"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btn_sign"
+            android:layout_width="278dp"
+            android:layout_height="63dp"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="#201E28"
+            android:onClick="onClickSign"
+            android:text="Войти"
+            android:textColor="#fdfdfd"
+            android:textSize="25sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+
+            android:id="@+id/link_to_reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/inter_bold"
+            android:text="Зарегестрироваться"
+            android:textColor="#fdfdfd"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText"
+            />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
